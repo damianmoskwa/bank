@@ -2,6 +2,7 @@ package pl.training.groovy.bank.accounts
 
 import groovy.transform.TupleConstructor
 import pl.training.groovy.bank.BankException
+import pl.training.groovy.bank.accounts.repository.PostgreeTransactionHistoryLogger
 
 import java.util.logging.Level
 import java.util.logging.Logger
