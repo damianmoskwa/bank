@@ -1,4 +1,4 @@
-package pl.traning.groovy.bank.accounts
+package pl.training.groovy.bank.accounts
 
 interface Accounts {
 

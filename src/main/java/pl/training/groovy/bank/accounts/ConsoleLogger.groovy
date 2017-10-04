@@ -1,11 +1,7 @@
-package pl.traning.groovy.bank.accounts
+package pl.training.groovy.bank.accounts
 
 import groovy.transform.TupleConstructor
-import pl.traning.groovy.bank.BankException
-import pl.traning.groovy.bank.accounts.Account
-import pl.traning.groovy.bank.accounts.Accounts
-import pl.traning.groovy.bank.accounts.AccountsService
-import pl.traning.groovy.bank.accounts.generators.AccountNumberGenerator
+import pl.training.groovy.bank.BankException
 
 import java.util.logging.Level
 import java.util.logging.Logger

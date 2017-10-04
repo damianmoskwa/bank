@@ -1,6 +1,4 @@
-package pl.traning.groovy.bank
-
-import pl.traning.groovy.bank.accounts.Account
+package pl.training.groovy.bank
 
 interface DepositObserver {
 

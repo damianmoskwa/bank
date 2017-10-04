@@ -1,4 +1,4 @@
-package pl.traning.groovy.bank.util
+package pl.training.groovy.bank.util
 
 trait Subject<E> {
     Set<Observer> observers = []

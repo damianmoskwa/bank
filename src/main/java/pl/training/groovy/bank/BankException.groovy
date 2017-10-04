@@ -1,4 +1,4 @@
-package pl.traning.groovy.bank
+package pl.training.groovy.bank
 
 class BankException extends RuntimeException {
 

@@ -1,13 +1,13 @@
-package pl.traning.groovy.bank
+package pl.training.groovy.bank
 
-import pl.traning.groovy.bank.accounts.Account
-import pl.traning.groovy.bank.accounts.Accounts
-import pl.traning.groovy.bank.accounts.AccountsService
-import pl.traning.groovy.bank.accounts.ConsoleLogger
-import pl.traning.groovy.bank.accounts.generators.AccountNumberGenerator
-import pl.traning.groovy.bank.accounts.generators.FakeAccountNumberGenerator
-import pl.traning.groovy.bank.accounts.repository.AccountsRepository
-import pl.traning.groovy.bank.accounts.repository.HashMapAccountsRepository
+import pl.training.groovy.bank.accounts.Account
+import pl.training.groovy.bank.accounts.Accounts
+import pl.training.groovy.bank.accounts.AccountsService
+import pl.training.groovy.bank.accounts.ConsoleLogger
+import pl.training.groovy.bank.accounts.generators.AccountNumberGenerator
+import pl.training.groovy.bank.accounts.generators.FakeAccountNumberGenerator
+import pl.training.groovy.bank.accounts.repository.AccountsRepository
+import pl.training.groovy.bank.accounts.repository.HashMapAccountsRepository
 
 import java.text.NumberFormat
 import java.util.logging.Level

@@ -1,4 +1,4 @@
-package pl.traning.groovy.bank.util
+package pl.training.groovy.bank.util
 
 interface Observer<E> {
 

@@ -1,4 +1,4 @@
-package pl.traning.groovy.bank.accounts.generators
+package pl.training.groovy.bank.accounts.generators
 
 interface AccountNumberGenerator {
 

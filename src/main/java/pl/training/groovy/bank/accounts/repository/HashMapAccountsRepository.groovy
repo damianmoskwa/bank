@@ -1,7 +1,6 @@
-package pl.traning.groovy.bank.accounts.repository
+package pl.training.groovy.bank.accounts.repository
 
-import pl.traning.groovy.bank.accounts.Account
-import pl.traning.groovy.bank.accounts.InsuficentFundsException
+import pl.training.groovy.bank.accounts.Account
 
 import java.util.concurrent.atomic.AtomicLong
 

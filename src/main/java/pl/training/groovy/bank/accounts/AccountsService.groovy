@@ -1,9 +1,8 @@
-package pl.traning.groovy.bank.accounts
+package pl.training.groovy.bank.accounts
 
-import pl.traning.groovy.bank.DepositObserver
-import pl.traning.groovy.bank.accounts.generators.AccountNumberGenerator
-import pl.traning.groovy.bank.accounts.repository.AccountsRepository
-import pl.traning.groovy.bank.util.Subject
+import pl.training.groovy.bank.accounts.generators.AccountNumberGenerator
+import pl.training.groovy.bank.accounts.repository.AccountsRepository
+import pl.training.groovy.bank.util.Subject
 
 
 class AccountsService implements Accounts, Subject<Account> {
