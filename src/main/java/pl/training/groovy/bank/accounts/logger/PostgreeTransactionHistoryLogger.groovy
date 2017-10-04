@@ -1,8 +1,9 @@
-package pl.training.groovy.bank.accounts.repository
+package pl.training.groovy.bank.accounts.logger
 
 import groovy.sql.Sql
-import pl.training.groovy.bank.accounts.Account
+import pl.training.groovy.bank.accounts.model.Account
 import pl.training.groovy.bank.accounts.Accounts
+import pl.training.groovy.bank.accounts.model.Operation
 
 import javax.sql.DataSource
 
@@ -25,13 +26,13 @@ class PostgreeTransactionHistoryLogger implements Accounts{
 
     void deposit(String accountNumber, Long funds) {
         accounts.deposit(accountNumber, funds)
-        insertTransactionLog(accountNumber, funds, "deposit")
+        insertTransactionLog(accountNumber, funds, Operation.DEPOSIT.name())
 
     }
 
     void withdraw(String accountNumber, Long funds) {
         accounts.withdraw(accountNumber, funds)
-        insertTransactionLog(accountNumber, funds, "withdraw")
+        insertTransactionLog(accountNumber, funds, Operation.WITHDRAW.name())
 
     }
 

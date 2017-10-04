@@ -2,15 +2,15 @@ package pl.training.groovy.bank
 
 import com.zaxxer.hikari.HikariDataSource
 import org.postgresql.Driver as PostgreDriver
-import pl.training.groovy.bank.accounts.Account
+import pl.training.groovy.bank.accounts.model.Account
 import pl.training.groovy.bank.accounts.Accounts
-import pl.training.groovy.bank.accounts.AccountsService
-import pl.training.groovy.bank.accounts.ConsoleLogger
+import pl.training.groovy.bank.accounts.service.AccountsService
+import pl.training.groovy.bank.accounts.logger.ConsoleLogger
 import pl.training.groovy.bank.accounts.generators.AccountNumberGenerator
 import pl.training.groovy.bank.accounts.generators.PostgreAccountNumberGenerator
 import pl.training.groovy.bank.accounts.repository.AccountsRepository
 import pl.training.groovy.bank.accounts.repository.PostgreAccountsRepository
-import pl.training.groovy.bank.accounts.repository.PostgreeTransactionHistoryLogger
+import pl.training.groovy.bank.accounts.logger.PostgreeTransactionHistoryLogger
 
 import javax.sql.DataSource
 import java.text.NumberFormat
@@ -51,6 +51,8 @@ class App {
         Account account = accounts.createAccount()
         accounts.deposit(account.number, 100_000_000)
         accounts.withdraw(account.number, 1000_001)
+        FileDataImporter dataImporter = new FileDataImporter(accounts: accounts)
+        dataImporter.importData("data.txt")
         println account
 
 

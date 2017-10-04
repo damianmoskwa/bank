@@ -1,6 +1,6 @@
 package pl.training.groovy.bank.accounts.repository
 
-import pl.training.groovy.bank.accounts.Account
+import pl.training.groovy.bank.accounts.model.Account
 
 interface AccountsRepository {
 

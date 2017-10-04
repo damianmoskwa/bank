@@ -1,7 +1,7 @@
 package pl.training.groovy.bank.accounts.repository
 
 import groovy.sql.Sql
-import pl.training.groovy.bank.accounts.Account
+import pl.training.groovy.bank.accounts.model.Account
 
 import javax.sql.DataSource
 

@@ -1,8 +1,9 @@
-package pl.training.groovy.bank.accounts
+package pl.training.groovy.bank.accounts.logger
 
 import groovy.transform.TupleConstructor
 import pl.training.groovy.bank.BankException
-import pl.training.groovy.bank.accounts.repository.PostgreeTransactionHistoryLogger
+import pl.training.groovy.bank.accounts.model.Account
+import pl.training.groovy.bank.accounts.Accounts
 
 import java.util.logging.Level
 import java.util.logging.Logger

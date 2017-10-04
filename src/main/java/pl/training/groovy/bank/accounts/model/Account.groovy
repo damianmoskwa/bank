@@ -1,6 +1,7 @@
-package pl.training.groovy.bank.accounts
+package pl.training.groovy.bank.accounts.model
 
 import groovy.transform.Canonical
+import pl.training.groovy.bank.accounts.service.InsuficentFundsException
 
 @Canonical
 class Account {

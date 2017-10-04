@@ -1,5 +1,7 @@
 package pl.training.groovy.bank.accounts
 
+import pl.training.groovy.bank.accounts.model.Account
+
 interface Accounts {
 
     Account createAccount ()
